@@ -1,6 +1,6 @@
 const user = document.querySelector(".header__user");
 const exitBtn = document.querySelector(".header__exit");
-const buttonsCategories = document.querySelectorAll(".categories")
+const buttonsCategories = document.querySelectorAll(".categories__item");
 
 function getLocalStorage() {
   if (localStorage.getItem('userName')) {
@@ -19,18 +19,19 @@ exitBtn.addEventListener("click", () => {
 buttonsCategories.forEach((item, index) => {
   item.addEventListener("click", () => {
     let url = "";
+
     switch (index) {
       case 0:
         url = "../hotels";
         break;
       case 1:
-        url = "../hotels";
+        url = "../futurepage";
         break;
       case 2:
-        url = "../hotels";
+        url = "../futurepage";
         break;
       case 3:
-        url = "../hotels";
+        url = "../futurepage";
         break;
     }
 
