@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgb(221, 224, 220);
+}
+
+.header {
+  height: 80px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+.header__welcome {
+  display: flex;
+}
+.header__user {
+  font-weight: 700;
+  text-decoration: underline;
+}
+.header__exit {
+  margin-left: 200px;
+  display: flex;
+  align-items: center;
+  transition: all 0.5s;
+}
+.header__exit-icon {
+  margin-left: 5px;
+  width: 24px;
+  height: 24px;
+  background: url("../../assets/img/svg/exit.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.header__exit:hover {
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+main .table-data {
+  width: 800px;
+  height: 700px;
+  overflow-y: auto;
+}
+main .table {
+  background-color: rgb(249, 240, 228);
+  border: 1px solid black;
+}
+main .table__th {
+  background-color: bisque;
+  width: 145px;
+  border: 1px solid black;
+}
+main .table__tr {
+  text-align: center;
+}
+main .table__tr:nth-child(2n) {
+  background-color: bisque;
+}
+main .buttons__title {
+  font-size: 16px;
+}
+main .buttons__input {
+  background-color: #ccdff1;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  transition: all 0.5s;
+}
+main .buttons__input:hover {
+  cursor: pointer;
+  background-color: yellowgreen;
+}
+main .buttons__items {
+  display: flex;
+  gap: 20px;
+  padding-top: 10px;
+}
+main .buttons__item {
+  width: 200px;
+  height: 35px;
+  border-radius: 15px;
+  border: 1px solid #ddd;
+  font-size: 20px;
+  transition: all 0.5s;
+}
+main .buttons__item:hover {
+  cursor: pointer;
+  background-color: yellowgreen;
+}
+main .buttons__item:nth-child(1) {
+  background-color: #e8c9db;
+}
+main .buttons__item:nth-child(2) {
+  background-color: #f1e7cc;
+}
+
+footer {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}/*# sourceMappingURL=style.css.map */
