@@ -65,17 +65,17 @@ main {
     height: 600px;
     border-radius: 30px;
 
-    &-title {
+    &__title {
       margin-top: 20px;
       margin-bottom: 20px;
       font-size: 32px;
     }
-    &-items {
+    &__items {
       display: flex;
       flex-direction: column;
       gap: 25px;
     }
-    &-item {
+    &__item {
       height: 80px;
       width: 500px;
       background-color: #ffe4c4;

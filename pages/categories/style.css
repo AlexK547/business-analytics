@@ -64,17 +64,17 @@ main .categories {
   height: 600px;
   border-radius: 30px;
 }
-main .categories-title {
+main .categories__title {
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 32px;
 }
-main .categories-items {
+main .categories__items {
   display: flex;
   flex-direction: column;
   gap: 25px;
 }
-main .categories-item {
+main .categories__item {
   height: 80px;
   width: 500px;
   background-color: #ffe4c4;
@@ -85,7 +85,7 @@ main .categories-item {
   justify-content: center;
   transition: all 0.5s;
 }
-main .categories-item:hover {
+main .categories__item:hover {
   cursor: pointer;
   background-color: #f9eedf;
 }
