@@ -50,6 +50,14 @@ body {
 .header__exit:hover {
   cursor: pointer;
 }
+@media screen and (max-width: 767px) {
+  .header {
+    font-size: 16px;
+  }
+  .header__exit {
+    margin-left: 20px;
+  }
+}
 
 main {
   display: flex;
@@ -112,6 +120,33 @@ main .buttons__item:nth-child(1) {
 }
 main .buttons__item:nth-child(2) {
   background-color: #f1e7cc;
+}
+@media screen and (max-width: 767px) {
+  main .table-data {
+    width: 300px;
+    height: 400px;
+    font-size: 10px;
+  }
+  main .table {
+    margin: 0 auto;
+  }
+  main .table__th {
+    width: 45px;
+  }
+  main .buttons {
+    width: 300px;
+  }
+  main .buttons__input {
+    font-size: 12px;
+  }
+  main .buttons__items {
+    display: flex;
+    flex-direction: column;
+  }
+  main .buttons__item {
+    font-size: 12px;
+    width: 130px;
+  }
 }
 
 footer {

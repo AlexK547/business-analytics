@@ -51,6 +51,13 @@ body {
       cursor: pointer;
     }
   }
+
+  @media screen and (max-width: 767px) {
+    font-size: 16px;
+    &__exit {
+      margin-left: 20px;
+    }
+  }
 }
 
 main {
@@ -64,10 +71,9 @@ main {
     width: 800px;
     height: 700px;
     overflow-y: auto;
-
   }
   .table {
-    // height: 700px;
+    // height: 600px;
     // overflow-y: auto;
     background-color: rgb(249, 240, 228);
     border: 1px solid black;
@@ -129,6 +135,35 @@ main {
     // &__item:nth-child(3) {
     //   background-color: #ccdff1;
     // }
+  }
+
+  @media screen and (max-width: 767px) {
+    .table-data {
+      width: 300px;
+      height: 400px;
+      font-size: 10px;
+    }
+    .table {
+      margin: 0 auto;
+    }
+    .table__th {
+      width: 45px;
+    }
+
+    .buttons {
+      width: 300px;
+      &__input {
+        font-size: 12px;
+      }
+      &__items {
+        display: flex;
+        flex-direction: column;
+      }
+      &__item {
+        font-size: 12px;
+        width: 130px;
+      }
+    }
   }
 }
 
